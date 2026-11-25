@@ -1,0 +1,2 @@
+"""SparkMinds AI Core Package"""
+

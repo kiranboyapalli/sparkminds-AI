@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "buildCommand": "cd frontend && npm ci && npm run build",
+  "outputDirectory": "frontend/dist",
+  "framework": "vite",
+  "rewrites": [
+    {
+      "source": "/((?!api/|assets/|sw\\.js|manifest\\.json|offline\\.html|icon-.*|apple-touch-icon\\.png|favicon\\.svg).*)",
+      "destination": "/index.html"
+    }
+  ]
+}
+

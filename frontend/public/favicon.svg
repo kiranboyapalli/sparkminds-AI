@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="navyBg" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0A192F" />
+      <stop offset="60%" stop-color="#0F2942" />
+      <stop offset="100%" stop-color="#0284C7" />
+    </linearGradient>
+    <linearGradient id="cyanSpark" x1="16" y1="6" x2="48" y2="38" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#00E5FF" />
+      <stop offset="100%" stop-color="#38BDF8" />
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="url(#navyBg)" />
+  <!-- Left Book Page (White + Electric Cyan tint) -->
+  <path
+    d="M12 23C12 20.2386 14.2386 18 17 18H30V49H17C14.2386 49 12 46.7614 12 44V23Z"
+    fill="#00E5FF"
+    fill-opacity="0.22"
+    stroke="#FFFFFF"
+    stroke-width="3"
+    stroke-linejoin="round"
+  />
+  <!-- Right Book Page (White + Electric Cyan tint) -->
+  <path
+    d="M52 23C52 20.2386 49.7614 18 47 18H34V49H47C49.7614 49 52 46.7614 52 44V23Z"
+    fill="#FFFFFF"
+    fill-opacity="0.18"
+    stroke="#FFFFFF"
+    stroke-width="3"
+    stroke-linejoin="round"
+  />
+  <!-- Rising Electric Cyan AI Spark Star -->
+  <path
+    d="M32 7L36.2 18.8L48 23L36.2 27.2L32 39L27.8 27.2L16 23L27.8 18.8L32 7Z"
+    fill="url(#cyanSpark)"
+    stroke="#FFFFFF"
+    stroke-width="2"
+    stroke-linejoin="round"
+  />
+</svg>
+

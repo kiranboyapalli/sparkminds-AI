@@ -1,0 +1,6 @@
+{
+  "public_key": "BEUJCmStnhkKSl66NPFr2Jc5aOoNc210gKwKTInGku9aVcNSHyuoS4Vm6fyKMxlVPALPm6ScnAv3A7OPvxMtWfM",
+  "private_pem": "-----BEGIN PRIVATE KEY-----\nMIGHAgEAMBMGByqGSM49AgEGCCqGSM49AwEHBG0wawIBAQQgPXxaiheLcV3/Z6NT\nFnR4zTbC9pbWFc47b0Bh7anmjdKhRANCAARFCQpkrZ4ZCkpeujTxa9iXOWjqDXNt\ndICsCkyJxpLvWlXDUh8rqEuFZun8ijMZVTwCz5uknJwL9wOzj78TLVnz\n-----END PRIVATE KEY-----\n",
+  "subject": "mailto:support@sparkminds.ai",
+  "created_at": "2026-11-20T12:37:47.052952+00:00"
+}

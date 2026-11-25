@@ -1,0 +1,22 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportHeight="108"
+    android:viewportWidth="108">
+    <!-- SparkMinds AI Adaptive Icon Foreground: White Open Book + Electric Cyan AI Spark -->
+    <path
+        android:fillColor="#3300E5FF"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="3.5"
+        android:pathData="M28,42 C28,38.5 31,36 34.5,36 L51,36 L51,78 L34.5,78 C31,78 28,75.5 28,72 Z" />
+    <path
+        android:fillColor="#33FFFFFF"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="3.5"
+        android:pathData="M80,42 C80,38.5 77,36 73.5,36 L57,36 L57,78 L73.5,78 C77,78 80,75.5 80,72 Z" />
+    <path
+        android:fillColor="#00E5FF"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2.2"
+        android:pathData="M54,20 L59.5,35.5 L75,41 L59.5,46.5 L54,62 L48.5,46.5 L33,41 L48.5,35.5 Z" />
+</vector>

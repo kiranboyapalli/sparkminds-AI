@@ -1,0 +1,46 @@
+# Secrets and Environment Variables - NEVER COMMIT
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+backend/.env
+frontend/.env
+*service-account*.json
+*firebase-adminsdk*.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.pytest_cache/
+*.db
+*.db-wal
+*.db-shm
+*.sqlite3
+backend/data/backups/
+backend/data/uploads/
+
+# Node / Frontend
+node_modules/
+dist/
+build/
+.vite/
+npm-debug.log*
+
+# Android / Capacitor
+frontend/android/.gradle/
+frontend/android/app/build/
+frontend/android/local.properties
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+
+backend/tests/live_chat_transcript.json

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0A192F" />
+    <title>Offline — SparkMinds AI | Dream Beyond Limits. Learn With Fire. Lead With Power!</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        background: radial-gradient(circle at top, #112240 0%, #0A192F 70%);
+        color: #FFFFFF;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 24px;
+      }
+      .card {
+        max-width: 480px;
+        width: 100%;
+        background: rgba(17, 34, 64, 0.92);
+        border: 2px solid rgba(0, 229, 255, 0.35);
+        border-radius: 24px;
+        padding: 32px 28px;
+        text-align: center;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
+      }
+      .badge {
+        display: inline-block;
+        padding: 6px 14px;
+        border-radius: 999px;
+        background: rgba(0, 229, 255, 0.15);
+        border: 1px solid rgba(0, 229, 255, 0.45);
+        color: #00E5FF;
+        font-size: 11px;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        margin-bottom: 16px;
+      }
+      h1 {
+        font-size: 24px;
+        font-weight: 800;
+        margin-bottom: 8px;
+        color: #FFFFFF;
+      }
+      .tagline {
+        color: #00E5FF;
+        font-size: 13px;
+        font-weight: 700;
+        margin-bottom: 16px;
+      }
+      p {
+        color: #CBD5E1;
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 24px;
+      }
+      .btn {
+        display: inline-block;
+        background: #00E5FF;
+        color: #0A192F;
+        font-weight: 800;
+        font-size: 14px;
+        padding: 12px 24px;
+        border-radius: 14px;
+        border: none;
+        cursor: pointer;
+        text-decoration: none;
+        transition: opacity 0.2s;
+      }
+      .btn:hover {
+        opacity: 0.92;
+      }
+      .privacy-note {
+        margin-top: 20px;
+        font-size: 11px;
+        color: #94A3B8;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="badge">SparkMinds AI • Offline Mode</div>
+      <h1>You are currently offline</h1>
+      <div class="tagline">
+        <span style="color:#FFFFFF;">Dream Beyond Limits.</span>
+        <span style="color:#FBBF24;"> Learn With Fire.</span>
+        <span style="color:#35D6E8;"> Lead With Power!</span>
+      </div>
+      <p>
+        Please check your Wi-Fi or mobile data connection to sync your personalised study schedule,
+        homework progress, and AI Learning Buddy sessions.
+      </p>
+      <button class="btn" onclick="window.location.reload()">
+        ↻ Retry Connection
+      </button>
+      <div class="privacy-note">
+        🔒 Child Safety & Privacy Guard: Sensitive student records and authentication tokens are never cached insecurely offline.
+      </div>
+    </div>
+  </body>
+</html>
+

@@ -1,0 +1,450 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* SparkMinds AI — Ultra-Premium International EdTech Palette (Part 2) */
+  --spark-midnight: #101B35;
+  --spark-midnight-deep: #091124;
+  --spark-midnight-soft: #1A284D;
+  --spark-indigo: #5146E5;
+  --spark-indigo-hover: #4338CA;
+  --spark-aqua: #35D6E8;
+  --spark-aqua-deep: #0EA5BE;
+  --spark-lavender: #EEEAFE;
+  --spark-white: #FFFFFF;
+  --spark-bg: #F6F7FC;
+  --spark-text: #202943;
+
+  /* Bluish Dashboard Palette (Part 13) */
+  --spark-dash-bg-main: #EAF0FF;
+  --spark-dash-bg-secondary: #DCE6FA;
+  --spark-dash-card: #F7F9FF;
+  --spark-dash-navy: #172554;
+  --spark-dash-indigo: #4F46E5;
+  --spark-dash-aqua: #35D6E8;
+  --spark-dash-border: #C2D4F8;
+
+  /* Compatibility aliases */
+  --sparkminds-navy: #101B35;
+  --sparkminds-navy-light: #1A284D;
+  --sparkminds-cyan: #35D6E8;
+  --sparkminds-cyan-dark: #0EA5BE;
+  --eduspark-primary: #101B35;
+  --eduspark-primary-dark: #091124;
+  --eduspark-secondary: #5146E5;
+  --eduspark-accent: #35D6E8;
+  --eduspark-success: #10B981;
+  --eduspark-warning: #F59E0B;
+  --eduspark-danger: #EF4444;
+  --eduspark-bg: #F6F7FC;
+  --eduspark-surface: #FFFFFF;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: var(--spark-bg);
+  color: var(--spark-text);
+  font-family: 'Plus Jakarta Sans', 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  line-height: 1.5;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+h1, h2, h3, .font-display {
+  font-family: 'Space Grotesk', 'Plus Jakarta Sans', system-ui, sans-serif;
+  letter-spacing: -0.025em;
+}
+
+/* Architectural Aurora + Soft Mesh Canvas (#F6F7FC) */
+.eduspark-mesh-bg {
+  background-color: #F6F7FC;
+  background-image:
+    radial-gradient(ellipse 65% 45% at 0% 0%, rgba(81, 70, 229, 0.085) 0px, transparent 60%),
+    radial-gradient(ellipse 55% 45% at 100% 0%, rgba(53, 214, 232, 0.1) 0px, transparent 58%),
+    radial-gradient(circle at 50% 100%, rgba(238, 234, 254, 0.55) 0px, transparent 55%);
+}
+
+/* Subtle Architectural Hero Grid Pattern (Apple / Linear / Stripe Polish) */
+.spark-hero-grid {
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.055) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.055) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+.spark-light-dot-grid {
+  background-image: radial-gradient(rgba(81, 70, 229, 0.12) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+
+/* Part 13: Ultra-Premium Layered Bluish Dashboard Canvas (#EAF0FF -> #DCE6FA) */
+.spark-dashboard-canvas {
+  background:
+    radial-gradient(ellipse 75% 40% at 12% 0%, rgba(79, 70, 229, 0.09) 0%, transparent 65%),
+    radial-gradient(ellipse 60% 40% at 92% 10%, rgba(53, 214, 232, 0.12) 0%, transparent 62%),
+    linear-gradient(180deg, #EAF0FF 0%, #DCE6FA 100%);
+  border: 1px solid #C2D4F8;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.85),
+    0 20px 50px -28px rgba(23, 37, 84, 0.16);
+}
+
+/* Part 13: Ultra-Premium Bluish Dashboard Card (#F7F9FF + Crisp Inner Highlight + Deep Navy #172554) */
+.spark-dashboard-card {
+  background: linear-gradient(180deg, #FFFFFF 0%, #F7F9FF 100%);
+  border: 1px solid #C2D4F8;
+  color: #172554;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.95),
+    0 2px 6px -2px rgba(23, 37, 84, 0.05),
+    0 12px 28px -14px rgba(79, 70, 229, 0.16);
+}
+
+.spark-dashboard-card-hover {
+  transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.22s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.22s ease;
+}
+
+.spark-dashboard-card-hover:hover {
+  transform: translateY(-2.5px);
+  border-color: rgba(79, 70, 229, 0.48);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 1),
+    0 16px 34px -14px rgba(23, 37, 84, 0.16),
+    0 4px 16px -4px rgba(53, 214, 232, 0.24);
+}
+
+/* Ultra-Premium Elevated Card Surface */
+.eduspark-card {
+  background: linear-gradient(180deg, #FFFFFF 0%, #FDFDFF 100%);
+  border: 1px solid #DFE5F6;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.9),
+    0 1px 3px 0 rgba(16, 27, 53, 0.04),
+    0 12px 28px -14px rgba(81, 70, 229, 0.12);
+}
+
+.eduspark-card-hover {
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.2s ease;
+}
+
+.eduspark-card-hover:hover {
+  transform: translateY(-2.5px);
+  box-shadow:
+    0 18px 34px -14px rgba(16, 27, 53, 0.12),
+    0 4px 14px -4px rgba(81, 70, 229, 0.18);
+  border-color: rgba(81, 70, 229, 0.42);
+}
+
+/* Premium Gradient Primary Button Polish */
+.spark-btn-primary {
+  background: linear-gradient(135deg, #5146E5 0%, #4338CA 100%);
+  color: #FFFFFF;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.22),
+    0 8px 20px -6px rgba(81, 70, 229, 0.5);
+  transition: transform 0.16s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.16s ease, filter 0.16s ease;
+}
+
+.spark-btn-primary:hover:not(:disabled) {
+  transform: translateY(-1px);
+  filter: brightness(1.06);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.28),
+    0 12px 24px -6px rgba(81, 70, 229, 0.6);
+}
+
+.spark-btn-aqua {
+  background: linear-gradient(135deg, #35D6E8 0%, #22C4D8 100%);
+  color: #101B35;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.45),
+    0 8px 22px -6px rgba(53, 214, 232, 0.5);
+  transition: transform 0.16s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.16s ease, filter 0.16s ease;
+}
+
+.spark-btn-aqua:hover:not(:disabled) {
+  transform: translateY(-1px);
+  filter: brightness(1.05);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.55),
+    0 12px 26px -6px rgba(53, 214, 232, 0.62);
+}
+
+/* Accessible Keyboard Focus Rings */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid #5146E5;
+  outline-offset: 2px;
+}
+
+/* Crisp Mathematical Equation Display Block */
+.spark-math-block {
+  margin: 0.5rem 0;
+  padding: 0.75rem 1rem;
+  border-radius: 0.9rem;
+  background: linear-gradient(135deg, #F7F9FF 0%, #EEEAFE 100%);
+  border: 1px solid #C8D3FA;
+  color: #101B35;
+  font-family: 'Cambria Math', 'STIX Two Math', 'Plus Jakarta Sans', Georgia, serif;
+  font-size: 1.02rem;
+  font-weight: 700;
+  letter-spacing: 0.015em;
+  text-align: center;
+  overflow-x: auto;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+/* Refined Shimmer Skeleton Loader */
+@keyframes sparkShimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.spark-skeleton {
+  background: linear-gradient(90deg, #E7ECFA 25%, #F4F7FF 50%, #E7ECFA 75%);
+  background-size: 200% 100%;
+  animation: sparkShimmer 1.6s ease-in-out infinite;
+}
+
+/* Smooth Purposeful Animations */
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes robotBlink {
+  0%, 44%, 48%, 92%, 96%, 100% {
+    transform: scaleY(1);
+  }
+  46%, 94% {
+    transform: scaleY(0.12);
+  }
+}
+
+@keyframes robotWave {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-16deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  75% {
+    transform: rotate(-12deg);
+  }
+}
+
+@keyframes antennaSpark {
+  0%, 100% {
+    opacity: 0.78;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.18);
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(53, 214, 232, 0.45);
+  }
+  50% {
+    box-shadow: 0 0 0 10px rgba(53, 214, 232, 0);
+  }
+}
+
+@keyframes fadeInSlide {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes taglineReveal {
+  from {
+    opacity: 0;
+    transform: translateY(10px) scale(0.98);
+    letter-spacing: 0.04em;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    letter-spacing: -0.015em;
+  }
+}
+
+@keyframes sparkCelebrate {
+  0% {
+    transform: scale(0.92);
+    opacity: 0;
+  }
+  65% {
+    transform: scale(1.03);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes dashFlow {
+  to {
+    stroke-dashoffset: -28;
+  }
+}
+
+@keyframes orbitSpin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-float-slow {
+  animation: floatSlow 4.2s ease-in-out infinite;
+}
+
+.animate-robot-blink {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: robotBlink 4.6s ease-in-out infinite;
+}
+
+.animate-robot-wave {
+  transform-box: fill-box;
+  transform-origin: bottom center;
+  animation: robotWave 2.2s ease-in-out infinite;
+}
+
+.animate-antenna-spark {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: antennaSpark 2s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 2.4s infinite;
+}
+
+.animate-fade-in {
+  animation: fadeInSlide 0.28s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-tagline-reveal {
+  animation: taglineReveal 0.65s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-spark-celebrate {
+  animation: sparkCelebrate 0.38s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-dash-flow {
+  animation: dashFlow 1.5s linear infinite;
+}
+
+.animate-orbit-slow {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: orbitSpin 12s linear infinite;
+}
+
+.animate-orbit-fast {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: orbitSpin 6.5s linear infinite;
+}
+
+/* Adaptive Grade-Band Experience Typography & Touch Targets */
+.grade-band-early {
+  --card-radius: 1.25rem;
+  --touch-min-height: 3.1rem;
+  font-size: 1.02rem;
+}
+
+.grade-band-upper-primary {
+  --card-radius: 1rem;
+  --touch-min-height: 2.85rem;
+  font-size: 1rem;
+}
+
+.grade-band-middle {
+  --card-radius: 0.9rem;
+  --touch-min-height: 2.75rem;
+  font-size: 0.975rem;
+}
+
+.grade-band-senior {
+  --card-radius: 0.75rem;
+  --touch-min-height: 2.6rem;
+  font-size: 0.95rem;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(81, 70, 229, 0.28);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(81, 70, 229, 0.55);
+}
+
+/* Full Reduced-Motion Accessibility Support */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .eduspark-card-hover:hover,
+  .spark-dashboard-card-hover:hover,
+  .spark-btn-primary:hover,
+  .spark-btn-aqua:hover {
+    transform: none;
+  }
+}

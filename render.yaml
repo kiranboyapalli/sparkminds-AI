@@ -1,0 +1,21 @@
+# SparkMinds AI — Render Cloud Blueprint (Production & Preview Environments)
+services:
+  - type: web
+    name: sparkminds-ai-production
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    plan: starter
+    healthCheckPath: /api/health
+    prPreviewsEnabled: true
+    disk:
+      name: sparkminds-production-data
+      mountPath: /app/backend/data
+      sizeGB: 2
+    envVars:
+      - key: SPARKMINDS_ENV
+        value: production
+      - key: GEMINI_MODEL
+        value: gemini-2.5-flash
+      - key: GEMINI_API_KEY
+        sync: false
+
